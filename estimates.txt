@@ -1,0 +1,11 @@
+Minimum RTO for a single AZ outage: less than 10 mins
+Since we have a multi zone database, we have the best possible RTO for a single AZ failure. The minimum RTO will be in minutes. In case of any failure the database will failover to next availability zone
+
+Minimum RTO for a single region outage: 15 - 30 mins
+In case of single region outage, we have a read replica which can be manually promoted to primary database
+
+Minimum RPO for a single AZ outage: nil/0
+Since its a multi zone database, there is no data loss
+
+Minimum RPO for a single region outage: nil/0
+since we have multi zone database and a read replica, we will not have data loss

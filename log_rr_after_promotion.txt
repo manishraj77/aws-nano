@@ -1,0 +1,33 @@
+mysql -h secondarydb.cpvd981dyli2.us-west-1.rds.amazonaws.com -u admin -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.23 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> insert into udacity_lab values (322, 'spring hail', '10 aussie street, city, 12356');
+ERROR 1046 (3D000): No database selected
+MySQL [(none)]> connect udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Connection id:    11
+Current database: udacity
+
+MySQL [udacity]> insert into udacity_lab values (322, 'spring hail', '10 aussie street, city, 12356');
+Query OK, 1 row affected, 2 warnings (0.01 sec)
+
+MySQL [udacity]> select * from udacity_lab;
++-----+------------+----------------------+
+| id  | name       | address              |
++-----+------------+----------------------+
+| 321 | spring kan | 45 aussie street, so |
+| 322 | spring hai | 10 aussie street, ci |
++-----+------------+----------------------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]> 
+
