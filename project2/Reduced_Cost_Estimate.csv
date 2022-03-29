@@ -1,0 +1,15 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,269.85,3238.2,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.large)"
+My Estimate,US East (Ohio),Database backend,Amazon RDS for MySQL,0,1412.88,16954.56,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (Ohio),,Amazon RDS for MySQL,0,2057.8,24693.6,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (2), Instance type (db.m4.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),ELB,Application Load Balancer,0,79.57,954.84,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),S3 Lab,S3 Standard,0,3.2,38.4,USD,S3 Standard storage (100 GB per month)
+My Estimate,US East (Ohio),S3 Lab,Data Transfer,0,921.6,11059.2,USD,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (10 TB per month)"
+My Estimate,US East (Ohio),App Server,Amazon EC2,0,365.32,4383.84,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (m5.xlarge)"
+My Estimate,US East (Ohio),VPC,Amazon Virtual Private Cloud (VPC),0,37.35,448.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),udacity cloudfront,Amazon CloudFront,0,105,1260,USD,"Data transfer out to internet (1000 GB per month), Data transfer out to origin (1000 GB per month)"
+,,,,,,,,
+Total,,,,,5252.57,,,
+"Moved away from on demand EC2 and RDS instances to reserved instances, thats saved quite a lot of money. This estimate is based on very limited information available and lots of assumptions.",,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
