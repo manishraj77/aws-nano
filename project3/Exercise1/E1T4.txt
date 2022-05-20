@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The application URL is using non secure port 80
+
+# Poor practice 2
+S3 bucket has public access which is a bad practice and is open to anybody.

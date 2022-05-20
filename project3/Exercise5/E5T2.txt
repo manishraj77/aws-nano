@@ -1,0 +1,9 @@
+Identify tools that will allow you to do the following: 
+a. Scan infrastructure as code templates. Regula
+b. Scan AMI’s or containers for OS vulnerabilities. Twistlock
+c. Scan an AWS environment for cloud configuration vulnerabilities. AWS Config
+
+For each tool - identify an example compliance violation or vulnerability which it might expose.
+Regula: Overly permissive IAM rules
+Twistlock: Container vulnerabilities from CVE like vulnerable curl package in the container
+AWS Config: Security hub IAM password policy minimum length check.
